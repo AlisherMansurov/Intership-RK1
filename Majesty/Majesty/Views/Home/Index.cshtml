@@ -1,0 +1,324 @@
+﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+
+
+@{
+    Layout = "_IndexLayout";
+    var cultureList = locOptions.Value.SupportedUICultures;
+}
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor _httpContext
+@inject IOptions<RequestLocalizationOptions> locOptions
+@inject IViewLocalizer _lang
+
+<div class="section overflow-hidden">
+    <div data-w-id="656389c5-833a-79b5-7c26-4d35b0d2014c" class="hero-image-holder">
+        <div class="container">
+            <div class="hero-section">
+                <div class="hero-section-text-wrapper">
+                    <div style="-webkit-transform:translate3d(0, 70px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                         class="hero-section-text-holder">
+                        <div class="perspective">
+                            <div style="opacity:0;-webkit-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                 class="text-animation-01">
+                                <div style="font-variation-settings:&quot;wght&quot; 200" class="hero-text">G</div>
+                            </div>
+                        </div>
+                        <div class="perspective">
+                            <div style="opacity:0;-webkit-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                 class="text-animation-02">
+                                <div style="font-variation-settings:&quot;wght&quot; 200" class="hero-text">a</div>
+                            </div>
+                        </div>
+                        <div class="perspective">
+                            <div style="opacity:0;-webkit-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                 class="text-animation-03">
+                                <div style="font-variation-settings:&quot;wght&quot; 200" class="hero-text">t</div>
+                            </div>
+                        </div>
+                        <div class="perspective">
+                            <div style="opacity:0;-webkit-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                 class="text-animation-04">
+                                <div style="font-variation-settings:&quot;wght&quot; 200" class="hero-text">s</div>
+                            </div>
+                        </div>
+                        <div class="perspective">
+                            <div style="opacity:0;-webkit-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                 class="text-animation-05">
+                                <div style="font-variation-settings:&quot;wght&quot; 200" class="hero-text">b</div>
+                            </div>
+                        </div>
+                        <div class="perspective">
+                            <div style="opacity:0;-webkit-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 218px, 0) scale3d(1, 1, 1) rotateX(-15deg) rotateY(106deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                 class="text-animation-06">
+                                <div style="font-variation-settings:&quot;wght&quot; 200" class="hero-text">y</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-short-description">
+                    <div class="home-short-description-holder">
+                        <div class="perspective">
+                            <div style="-webkit-transform:translate3d(0, 22px, 0) scale3d(1, 1, 1) rotateX(-90deg) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 22px, 0) scale3d(1, 1, 1) rotateX(-90deg) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 22px, 0) scale3d(1, 1, 1) rotateX(-90deg) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 22px, 0) scale3d(1, 1, 1) rotateX(-90deg) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d;opacity:0"
+                                 class="animate-on-load-03">
+                                <div class="lang">
+                                    <form asp-action="Index" id="cultureForm">
+                                        <label>Language: </label>
+                                        <select onchange="SetCulture(this.value);">
+                                            <option selected value="">@_lang["Choose language"]</option>
+                                            @foreach (CultureInfo item in cultureList)
+                                            {
+                                                <option value="@item.Name">@item.Name | @item.DisplayName</option>
+                                            }
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media-holder">
+                    <div class="social-media-links">
+                        <a data-w-id="a3d1f645-e3d5-9896-f4a6-b7e8ad86933c" style="opacity:0"
+                           href="http://instagram.com" target="_blank" class="hero-link">INSTAGRAM</a><a data-w-id="04e40d60-8bf2-ad34-ce5a-8ad3882a319c" style="opacity:0"
+                                                                                                         href="http://whatsapp.com" target="_blank" class="hero-link">WHATSAPP</a>
+                    </div><a data-w-id="5dd1a059-8b0f-2bb8-3a7e-e5221ddc743f" style="opacity:0"
+                             href="mailto:email@EMAIL.COM" class="hero-link">GATSBY@EMAIL.COM</a>
+                </div>
+                <div class="projects-list-holder">
+                    <div id="Projects" class="center-title">
+                        <div data-w-id="c5449a0e-73af-d27c-168c-b675bcbd42d4" style="opacity:0" class="centered-title">
+                            @_lang["SelectedWork"]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-wrapper">
+            <div data-w-id="c4c6391f-fac2-e763-6651-366b07a13df7"
+                 style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+                 class="home-projects-wrapper w-dyn-list">
+                <div role="list" class="home-projects-list w-dyn-items">
+                    <div role="listitem" class="home-projects-item w-dyn-item">
+                        <a href="@Url.Action("UnleashedImagination","Home")" class="project-item-holder w-inline-block">
+                            <img src="~/images/image-205.jpg" loading="lazy" alt=""
+                                 sizes="(max-width: 1439px) 300px, 350.0000305175781px"
+                                 srcset="~/images/image-205-p-500.jpg 500w, images/image-205-p-800.jpg 800w, images/image-205-p-1080.jpg 1080w, images/image-205.jpg 1178w"
+                                 class="project-thumbnail-image" />
+                        </a>
+                    </div>
+                    <div role="listitem" class="home-projects-item w-dyn-item">
+                        <a href="@Url.Action("CreativeChronicles","Home")" class="project-item-holder w-inline-block">
+                            <img src="~/images/image-206.jpg" loading="lazy" alt=""
+                                 sizes="(max-width: 1439px) 300px, 350.0000305175781px"
+                                 srcset="~/images/image-206-p-500.jpg 500w, images/image-206-p-800.jpg 800w, images/image-206.jpg 1178w"
+                                 class="project-thumbnail-image" />
+                        </a>
+                    </div>
+                    <div role="listitem" class="home-projects-item w-dyn-item">
+                        <a href="@Url.Action("EclecticElegance","Home")" class="project-item-holder w-inline-block">
+                            <img src="~/images/image-207.jpg" loading="lazy" alt=""
+                                 sizes="(max-width: 1439px) 300px, 350.0000305175781px"
+                                 srcset="~/images/image-207-p-500.jpg 500w, images/image-207-p-800.jpg 800w, images/image-207.jpg 1178w"
+                                 class="project-thumbnail-image" />
+                        </a>
+                    </div>
+                    <div role="listitem" class="home-projects-item w-dyn-item">
+                        <a href="@Url.Action("VisualSymphony","Home")" class="project-item-holder w-inline-block">
+                            <img src="~/images/image-208.jpg" loading="lazy" alt=""
+                                 sizes="(max-width: 1439px) 300px, 350.0000305175781px"
+                                 srcset="~/images/image-208-p-500.jpg 500w, images/image-208-p-800.jpg 800w, images/image-208.jpg 1178w"
+                                 class="project-thumbnail-image" />
+                        </a>
+                    </div>
+                    <div role="listitem" class="home-projects-item w-dyn-item">
+                        <a href="@Url.Action("StyleUnveiled","Home")" class="project-item-holder w-inline-block">
+                            <img src="~/images/image-209.jpg" loading="lazy" alt=""
+                                 sizes="(max-width: 1439px) 300px, 350.0000305175781px"
+                                 srcset="~/images/image-209-p-500.jpg 500w, images/image-209-p-800.jpg 800w, images/image-209-p-1080.jpg 1080w, images/image-209.jpg 1178w"
+                                 class="project-thumbnail-image" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-w-id="7f4e1348-6900-1776-8e47-e2af6c2f6f3e" class="infnite-text-holder">
+                <div class="infnite-text-container _01">
+                    <div class="infnite-text-wrapper _01">
+                        <div class="infnite-text">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                        <div class="infnite-text grey">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="infnite-text-wrapper _01">
+                        <div class="infnite-text">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                        <div class="infnite-text grey">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="infnite-text-wrapper _01">
+                        <div class="infnite-text">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                        <div class="infnite-text grey">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="infnite-text-wrapper _01">
+                        <div class="infnite-text">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                        <div class="infnite-text grey">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="infnite-text-wrapper _01">
+                        <div class="infnite-text">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                        <div class="infnite-text grey">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="infnite-text-container _02">
+                    <div class="infnite-text-wrapper _02">
+                        <div class="infnite-text white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                        <div class="infnite-text grey white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                    </div>
+                    <div class="infnite-text-wrapper _02">
+                        <div class="infnite-text white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                        <div class="infnite-text grey white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                    </div>
+                    <div class="infnite-text-wrapper _02">
+                        <div class="infnite-text white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                        <div class="infnite-text grey white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                    </div>
+                    <div class="infnite-text-wrapper _02">
+                        <div class="infnite-text white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                        <div class="infnite-text grey white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                    </div>
+                    <div class="infnite-text-wrapper _02">
+                        <div class="infnite-text white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                        <div class="infnite-text grey white">@_lang["Available, UK Based Only"]</div>
+                        <div class="dot white-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-container-holder">
+            <img src="~/images/main-20image-2001-20-1-.webp" loading="lazy" sizes="100vw"
+                 srcset="~/images/main-20image-2001-20-1-p-500.webp 500w, images/main-20image-2001-20-1-p-800.webp 800w, images/main-20image-2001-20-1-p-1080.webp 1080w, images/main-20image-2001-20-1-p-1600.webp 1600w, images/main-20image-2001-20-1-p-2000.webp 2000w, images/main-20image-2001-20-1-p-2600.webp 2600w, images/main-20image-2001-20-1-.webp 3190w"
+                 alt="" class="hero-image-full" />
+            <div class="hero-background-overlay"></div><img src="~/images/main-20image-2002.webp" loading="lazy"
+                                                            sizes="100vw"
+                                                            srcset="~/images/main-20image-2002-p-500.webp 500w, images/main-20image-2002-p-800.webp 800w, images/main-20image-2002-p-1080.webp 1080w, images/main-20image-2002-p-1600.webp 1600w, images/main-20image-2002-p-2000.webp 2000w, images/main-20image-2002-p-2600.webp 2600w, images/main-20image-2002.webp 3190w"
+                                                            alt="" class="hero-image-full crop" />
+        </div>
+    </div>
+</div>
+<div id="About" class="section">
+    <div data-w-id="614794b5-4b4b-bf1f-30a4-034b2d7f3d64" class="about-me-section">
+        <div class="container">
+            <div class="about-me-title-holder">
+                <div class="about-me-title">@_lang["About Me!"]</div>
+                <div class="about-short-text">
+                    <div class="home-short-description-holder">
+                        <div class="hero-about-me">
+                            @_lang["The fleeting nature of the golden hour beckons us to appreciate"]
+                            @_lang["each landscape with a sense of urgency,"] <span class="lower-opacity-text">
+                                @_lang["a reminder not"]
+                                @_lang["to linger too somberly in the passing moments. Meanwhile, the majestic mountains on"]
+                                @_lang["the horizon exhibit a remarkable skill in masquerading their grandeur."]
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-me-image-holder">
+                    <img src="~/images/about-20me-20full.webp" loading="lazy" sizes="100vw"
+                         srcset="~/images/about-20me-20full-p-500.webp 500w, images/about-20me-20full-p-800.webp 800w, images/about-20me-20full-p-1080.webp 1080w, images/about-20me-20full-p-1600.webp 1600w, images/about-20me-20full-p-2000.webp 2000w, images/about-20me-20full.webp 2374w"
+                         alt="" class="about-me-image" />
+                    <div class="hero-background-overlay about-me"></div><img src="~/images/about-20me-20transparent.webp"
+                                                                             loading="lazy" sizes="100vw"
+                                                                             srcset="~/images/about-20me-20transparent-p-500.webp 500w, images/about-20me-20transparent-p-800.webp 800w, images/about-20me-20transparent-p-1080.webp 1080w, images/about-20me-20transparent-p-1600.webp 1600w, images/about-20me-20transparent-p-2000.webp 2000w, images/about-20me-20transparent.webp 2374w"
+                                                                             alt="" class="about-me-image cut" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Work" data-w-id="e0c10eb5-b4eb-1ef5-f5c1-40419b516896" class="section overflow-hidden">
+    <div class="container">
+        <div class="services-section">
+            <div class="center-title">
+                <div class="fade-in-on-scroll">
+                    <div class="centered-title">@_lang["I Can Help With"]</div>
+                </div>
+            </div>
+            <div class="services-grid">
+                <div class="services-grid-holder">
+                    <div class="services-list">
+                        <div class="service-content-holder">
+                            <div class="services-number">01</div>
+                            <div class="services-title">@_lang["Poses Ideas"]</div>
+                        </div>
+                        <div class="services-line"></div>
+                        <div class="service-image-holder">
+                            <div class="service-image-container">
+                                <img src="~/images/about-20me-201.webp" loading="lazy" alt="" sizes="420.0000305175781px"
+                                     srcset="~/images/about-20me-201-p-500.webp 500w, images/about-20me-201-p-800.webp 800w, images/about-20me-201-p-1080.webp 1080w, images/about-20me-201.webp 1208w"
+                                     class="service-image" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-content-holder">
+                            <div class="services-number">02</div>
+                            <div class="services-title">@_lang["Location"]</div>
+                        </div>
+                        <div class="services-line"></div>
+                        <div class="service-image-holder">
+                            <div class="service-image-container">
+                                <img src="~/images/about-20me-200.webp" loading="lazy" alt=""
+                                     sizes="(max-width: 767px) 88vw, 420.0000305175781px"
+                                     srcset="~/images/about-20me-200-p-500.webp 500w, images/about-20me-200-p-800.webp 800w, images/about-20me-200-p-1080.webp 1080w, images/about-20me-200.webp 1208w"
+                                     class="service-image" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-content-holder">
+                            <div class="services-number">03</div>
+                            <div class="services-title">@_lang["Wedding Photos"]</div>
+                        </div>
+                        <div class="services-line"></div>
+                        <div class="service-image-holder">
+                            <div class="service-image-container">
+                                <img src="~/images/about-20me-202.webp" loading="lazy" alt=""
+                                     sizes="(max-width: 767px) 88vw, 420.0000305175781px"
+                                     srcset="~/images/about-20me-202-p-500.webp 500w, images/about-20me-202-p-800.webp 800w, images/about-20me-202-p-1080.webp 1080w, images/about-20me-202.webp 1208w"
+                                     class="service-image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section script
+{
+    <script>
+        function SetCulture(selectedCulture) {
+            var culture = "/?culture=" + selectedCulture + "&cultureIU=" + selectedCulture;
+            document.getElementById("cultureForm").action = culture;
+            document.getElementById("cultureForm").submit();
+        }
+    </script>
+}
+    

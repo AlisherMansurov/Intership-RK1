@@ -1,0 +1,9 @@
+C:\Users\alish\OneDrive\Рабочий стол\PAPKI\Univer\С6\Intership IV\RK\Majesty\Majesty\Majesty\obj\Release\net8.0\PubTmp\Out\Majesty.exe
+C:\Users\alish\OneDrive\Рабочий стол\PAPKI\Univer\С6\Intership IV\RK\Majesty\Majesty\Majesty\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\alish\OneDrive\Рабочий стол\PAPKI\Univer\С6\Intership IV\RK\Majesty\Majesty\Majesty\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\alish\OneDrive\Рабочий стол\PAPKI\Univer\С6\Intership IV\RK\Majesty\Majesty\Majesty\obj\Release\net8.0\PubTmp\Out\Majesty.dll
+C:\Users\alish\OneDrive\Рабочий стол\PAPKI\Univer\С6\Intership IV\RK\Majesty\Majesty\Majesty\obj\Release\net8.0\PubTmp\Out\Majesty.deps.json
+C:\Users\alish\OneDrive\Рабочий стол\PAPKI\Univer\С6\Intership IV\RK\Majesty\Majesty\Majesty\obj\Release\net8.0\PubTmp\Out\Majesty.runtimeconfig.json
+C:\Users\alish\OneDrive\Рабочий стол\PAPKI\Univer\С6\Intership IV\RK\Majesty\Majesty\Majesty\obj\Release\net8.0\PubTmp\Out\Majesty.pdb
+C:\Users\alish\OneDrive\Рабочий стол\PAPKI\Univer\С6\Intership IV\RK\Majesty\Majesty\Majesty\obj\Release\net8.0\PubTmp\Out\en\Majesty.resources.dll
+C:\Users\alish\OneDrive\Рабочий стол\PAPKI\Univer\С6\Intership IV\RK\Majesty\Majesty\Majesty\obj\Release\net8.0\PubTmp\Out\ru\Majesty.resources.dll
